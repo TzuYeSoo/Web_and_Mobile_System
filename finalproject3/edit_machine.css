@@ -1,0 +1,97 @@
+
+.backdrop {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+}
+
+.bg_header{
+    background-color: #007bff;
+    height: 40px;
+    border-radius: 15px 15px 0 0;
+    
+    width: 100%;
+}
+.edit_stock_container {
+  display: none;
+    position: fixed;
+    top: 20%;
+    left: 42%;
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    max-height: 600px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    z-index: 20;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.add_stock_container 
+ h2 {
+    text-align: center;
+    color: white; /* Blue color from header */
+    margin-bottom: 20px;
+}
+
+.edit_grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.stockin_grid h2{
+    color: black;
+    text-align: start;
+}
+.input_fields input[type="text"], 
+.input_fields input[type="number"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+
+.description-area textarea {
+    width: 100%;
+    padding: 0 10px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    min-height: 100px;
+    resize: vertical;
+    margin-bottom: 20px;
+}
+
+.add_button_container {
+     text-align: center;
+    padding: 10px 0 20px 0;
+}
+
+.add_button {
+    padding: 5px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: #b3d9ff; /* Light blue */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    
+} 
+.form-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.title{
+    text-align: center;
+}
+.H2{
+    text-align: center  ;
+    padding-top: 5px;
+}

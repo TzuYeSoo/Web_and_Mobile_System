@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="chart.css">
+</head>
+<body>
+    <div class="chart">
+        <canvas id="myChart"></canvas>
+    </div>
+    <!-- line for side bar-->
+    <div class="container">
+        <nav class="sidebar" id="sidebar">
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-items">
+                <a href="dashboard.html" class="nav-item">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+                
+                  
+                        <a href="uniform.php" class="nav-item">
+                            <i class="fas fa-shirt"></i>
+                            <span>Uniform</span>
+                        </a>
+                        <a href="machine.php" class="nav-item">
+                            <i class="fas fa-industry"></i>
+                            <span>Machine</span>
+                        </a>
+                       
+                        <a href="consumable.php" class="nav-item">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Consumable</span>
+                        </a>
+                    
+                
+                <a href="reservation.php" class="nav-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Reservation</span>
+                </a>
+                <a href="supplier.php" class="nav-item active">
+                    <i class="fas fa-truck-fast"></i>
+                    <span>Supplier</span>
+                </a>
+                <a href="#" class="nav-item logout">
+                    <i class="fas fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <!-- Content goes here -->
+             <header>
+                <div class="logo-section">
+                    <img src="stilogo.png" alt="STI Logo" class="logo">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="user-account">
+                    <img src="alden.png" alt="User" class="avatar">
+                    <span>user account</span>
+                </div>
+            <div class="container_uniform">
+
+                <p>
+                    kjasfkjahfjkashfhaskfhkam,7
+                </p>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="dashboard.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" 
+        integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+    </script>
+
+    <script src="java_chart.js"></script>
+</body>
+</html>

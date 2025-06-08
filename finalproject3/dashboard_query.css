@@ -1,0 +1,189 @@
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stat-card i {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.stat-card.uniform i { color: #FF6384; }
+.stat-card.machine i { color: #36A2EB; }
+.stat-card.reservation i { color: #FFCE56; }
+
+.stat-number {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 1.1em;
+}
+
+.loading {
+    opacity: 0.5;
+}
+
+@keyframes countUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.count-animation {
+    animation: countUp 0.5s ease-out forwards;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.3s;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.modal-header {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    margin: 0;
+    color: #333;
+}
+
+.close-btn {
+    font-size: 24px;
+    color: #666;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    border-color: #36A2EB;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(54, 162, 235, 0.2);
+}
+
+.update-btn {
+    background-color: #36A2EB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.update-btn:hover {
+    background-color: #2089d9;
+}
+
+.user-account {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.user-account:hover {
+    transform: scale(1.05);
+}
+
+.success-message {
+    color: #4CAF50;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
+
+.error-message {
+    color: #f44336;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
